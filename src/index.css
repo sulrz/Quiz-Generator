@@ -22,6 +22,8 @@ body {
 }
 
 .StartScreen--button {
+  margin-top: 30px;
+
   width: 200px;
   height: 60px;
   border-radius: 15px;
@@ -31,6 +33,18 @@ body {
 
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.StartScreen--button:focus,
+.QuizScreen--button:focus,
+.Question--answer:focus {
+  outline: none;
+}
+
+.StartScreen--button:active,
+.QuizScreen--button:active,
+.Question--answer:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
 .QuizScreen {
@@ -47,6 +61,15 @@ body {
   color: white;
 
   font-size: 1.3rem;
+}
+
+.QuizFooter {
+  display: inline-flex;
+  gap: 100px;
+}
+
+.QuizScreen--text {
+  margin-top: 7px;
 }
 
 .QuizScreen--button {
@@ -86,18 +109,21 @@ body {
   cursor: pointer;
 }
 
-.Question--answer-selected {
-  margin-left: 20px;
-  display: inline-block;
-  text-align: center;
-  
+.selected {
   background-color: wheat;
-  border: 0.5px solid #4D5B9E;
-  border-radius: 7px;
-  padding: 3px 10px;
-  font-size: 1rem;
-
   cursor: pointer;
+}
+
+.correct {
+  background-color: #94D7A2;
+}
+
+.wrong {
+  background-color: #F8BCBC;;
+}
+
+.defaultCursor {
+  cursor: default;
 }
 
 hr {

@@ -37,6 +37,8 @@ function Question(props) {
     }
 
     function chooseAnswer(id) {
+        if (props.isQuizEnd) return;
+
         props.selectAnswer(props.id, 
             answers.filter(answer => answer.id === id)[0].answer);
         
@@ -51,6 +53,8 @@ function Question(props) {
         <Answer
             key={answer.id}
             isSelected={answer.isSelected}
+            isCorrect={answer.answer === question.correct_answer}
+            isQuizEnd={props.isQuizEnd}
             selectAnswer={() => chooseAnswer(answer.id)}
             answer={answer.answer}
         />

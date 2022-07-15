@@ -1,6 +1,7 @@
 import React from "react";
-import { nanoid } from "nanoid"
 import Question from "./Question";
+import QuizFooter from "./QuizFooter";
+import { nanoid } from "nanoid"
 
 function QuizScreen(props) {
     const [isQuizEnd, setIsQuizEnd] = React.useState(false);
@@ -9,16 +10,9 @@ function QuizScreen(props) {
     function endQuiz() {
         setIsQuizEnd(true);
 
-        let cnt = 0;
-        for (let i=0; i<questions.length; i++) {
-            const question = questions[i];
-            console.log(question.selectedAnswer);
-            if (question.question.correct_answer === question.selectedAnswer) {
-                cnt++;
-            }
-        }
-
-        setCorrectAnswersAmount(cnt);
+        setCorrectAnswersAmount(questions
+            .filter(question => question.question.correct_answer === question.selectedAnswer)
+            .length);
     }
     
     const [questions, setQuestions] = React.useState(getQuestions());
@@ -59,13 +53,12 @@ function QuizScreen(props) {
         <main className="QuizScreen">
             {questionElements}
 
-            <button 
-                className="QuizScreen--button"
-                onClick={endQuiz}
-            >
-                Check answers</button>
-
-            <p>Correct answers amount: {correctAnswersAmount}</p>
+            <QuizFooter
+                isQuizEnd={isQuizEnd}
+                endQuiz={endQuiz}
+                questionsAmount={questions.length}
+                correctAnswersAmount={correctAnswersAmount}
+            />
         </main>
     );
 }
