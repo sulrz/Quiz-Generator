@@ -9,8 +9,8 @@
   .StartScreen--button {
     margin-top: 15px;
   
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 45px;
   
     font-size: 0.75rem;
   }
@@ -28,8 +28,8 @@
   }
   
   .QuizScreen--button {
-    width: 75px;
-    height: 20px;
+    width: 85px;
+    height: 25px;
     font-size: 0.55rem;
   }
 
@@ -41,7 +41,7 @@
   .Question--answer {
     margin-left: 10px;
 
-    padding: 1.5px 5px;
+    padding: 2px 7px;
     font-size: 0.5rem;
   }
 
@@ -117,7 +117,7 @@ body {
 
 .StartScreen {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
