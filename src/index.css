@@ -10,12 +10,13 @@
     margin-top: 15px;
   
     width: 150px;
-    height: 45px;
+    height: 50px;
   
     font-size: 0.75rem;
   }
 
   .QuizScreen {
+    margin-top: 20px;
     font-size: 0.65rem;
   }
 
@@ -28,8 +29,8 @@
   }
   
   .QuizScreen--button {
-    width: 85px;
-    height: 25px;
+    width: 150px;
+    height: 50px;
     font-size: 0.55rem;
   }
 
@@ -41,7 +42,7 @@
   .Question--answer {
     margin-left: 10px;
 
-    padding: 2px 7px;
+    padding: 3px 10px;
     font-size: 0.5rem;
   }
 
@@ -69,6 +70,7 @@
   }
 
   .QuizScreen {
+    margin-top: 40px;
     font-size: 1.3rem;
   }
 
@@ -116,8 +118,9 @@ body {
 }
 
 .StartScreen {
+  height: 100vh;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -149,6 +152,7 @@ body {
 
 .QuizScreen {
   width: 70%;
+  height: 100vh;
 
   position: absolute;
   top: 50%;
