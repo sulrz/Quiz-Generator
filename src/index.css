@@ -16,7 +16,7 @@
   }
 
   .QuizScreen {
-    top: 60%;
+    top: 40%;
     margin-top: 20px;
     font-size: 0.65rem;
   }
@@ -71,7 +71,7 @@
   }
 
   .QuizScreen {
-    top: 50%;
+    top: 42%;
     margin-top: 40px;
     font-size: 1.3rem;
   }
@@ -120,9 +120,8 @@ body {
 }
 
 .StartScreen {
-  height: 100vh;
   position: absolute;
-  top: 75%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -154,7 +153,6 @@ body {
 
 .QuizScreen {
   width: 70%;
-  height: 100vh;
 
   position: absolute;
   left: 50%;
