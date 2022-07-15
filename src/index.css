@@ -1,3 +1,110 @@
+/* Custom, iPhone Retina */ 
+/* Extra Small Devices, Phones */ 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .StartScreen {
+    font-size: 0.75rem;
+  }
+  
+  .StartScreen--button {
+    margin-top: 15px;
+  
+    width: 100px;
+    height: 30px;
+  
+    font-size: 0.75rem;
+  }
+
+  .QuizScreen {
+    font-size: 0.65rem;
+  }
+
+  .QuizFooter {
+    gap: 50px;
+  }
+
+  .QuizScreen--text {
+    margin-top: 3.5px;
+  }
+  
+  .QuizScreen--button {
+    width: 75px;
+    height: 20px;
+    font-size: 0.55rem;
+  }
+
+  .Question--answers-container {
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+
+  .Question--answer {
+    margin-left: 10px;
+
+    padding: 1.5px 5px;
+    font-size: 0.5rem;
+  }
+
+  hr {
+    margin-left: -2.5px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+  }
+}
+
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 992px) {
+  .StartScreen {
+    font-size: 1.5rem;
+  }
+  
+  .StartScreen--button {
+    margin-top: 30px;
+  
+    width: 200px;
+    height: 60px;
+  
+    font-size: 1.5rem;
+  }
+
+  .QuizScreen {
+    font-size: 1.3rem;
+  }
+
+  .QuizFooter {
+    gap: 100px;
+  }
+
+  .QuizScreen--text {
+    margin-top: 7px;
+  }
+  
+  .QuizScreen--button {
+    width: 150px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .Question--answers-container {
+    margin-top: -10px;
+    margin-left: -20px;
+  }
+
+  .Question--answer {
+    margin-left: 20px;
+
+    padding: 3px 10px;
+    font-size: 1rem;
+  }
+
+  hr {
+    margin-left: -5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Karla', sans-serif;
@@ -17,21 +124,14 @@ body {
   text-align: center;
 
   color: white;
-
-  font-size: 1.5rem;
 }
 
 .StartScreen--button {
-  margin-top: 30px;
-
-  width: 200px;
-  height: 60px;
   border-radius: 15px;
   
   color: black;
   background-color: #D0EFB1;
 
-  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -59,24 +159,16 @@ body {
   text-align: center;
 
   color: white;
-
-  font-size: 1.3rem;
 }
 
 .QuizFooter {
   display: inline-flex;
-  gap: 100px;
-}
-
-.QuizScreen--text {
-  margin-top: 7px;
 }
 
 .QuizScreen--button {
-  width: 150px;
-  height: 40px;
+  color: black;
+
   border-radius: 10px;
-  font-size: 1.1rem;
 
   cursor: pointer;
 }
@@ -91,20 +183,16 @@ body {
 
 .Question--answers-container {
   display: flex;
-  margin-top: -10px;
-  margin-left: -20px;
 }
 
 .Question--answer {
-  margin-left: 20px;
   display: inline-block;
   text-align: center;
   
   background-color: white;
+  color: black;
   border: 0.5px solid #4D5B9E;
   border-radius: 7px;
-  padding: 3px 10px;
-  font-size: 1rem;
 
   cursor: pointer;
 }
@@ -124,10 +212,4 @@ body {
 
 .defaultCursor {
   cursor: default;
-}
-
-hr {
-  margin-left: -5px;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
